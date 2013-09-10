@@ -30,3 +30,4 @@ function PBP_increase_upload( $bytes )
 {
     return 104857600; // 100 megabytes
 }
+?>
