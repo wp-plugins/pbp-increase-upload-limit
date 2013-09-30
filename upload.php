@@ -2,9 +2,9 @@
 /*
 Plugin Name: PBP Increase upload limit
 Plugin URI: http://projoktibangla.net
-Description: This plugin increase upload size limit up to 100Mb
+Description: This plugin increase upload size limit up to 250Mb
 Author: projoktibangla
-Version: 1.0
+Version: 1.1
 Author URI: http://projoktibangla.net
 */
 /*
@@ -24,10 +24,13 @@ Copyright (C) 2013  projoktibangla
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+
 add_filter( 'upload_size_limit', 'PBP_increase_upload' );
 
 function PBP_increase_upload( $bytes )
 {
-    return 104857600; // 100 megabytes
+    return 262144000; // 250 megabytes
 }
+
+
 ?>
